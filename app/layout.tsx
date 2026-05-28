@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Container } from "../components/ui";
+import Nav from "../components/ui/Nav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +29,25 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex min-h-screen flex-col bg-zinc-50 dark:bg-black">
+        <header className="border-b border-zinc-200 bg-white/60 backdrop-blur dark:border-zinc-800 dark:bg-black/60">
+          <Container>
+            <div className="py-4">
+              <Nav />
+            </div>
+          </Container>
+        </header>
+
+        <main className="flex-1 py-10">{
+          <Container>{children}</Container>
+        }</main>
+
+        <footer className="border-t border-zinc-200 bg-white/60 py-6 dark:border-zinc-800 dark:bg-black/60">
+          <Container>
+            <div className="text-sm text-zinc-600 dark:text-zinc-400">© {new Date().getFullYear()} Brody Mouw</div>
+          </Container>
+        </footer>
+      </body>
     </html>
   );
 }
