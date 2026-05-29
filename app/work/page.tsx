@@ -11,7 +11,7 @@ export default function WorkPage() {
       <h1 className="text-2xl font-bold">Work & Resume</h1>
 
       <div className="space-y-4">
-        <p className="text-zinc-700 dark:text-zinc-300">
+        <p>
           Experienced software engineer focusing on React, Next.js, TypeScript,
           and backend systems. Below is a short summary
         </p>

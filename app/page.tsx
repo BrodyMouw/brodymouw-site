@@ -6,7 +6,7 @@ export default function Home() {
       <div>
         <h1 className="text-3xl font-bold">Brody Mouw</h1>
         <p className="text-zinc-600 dark:text-zinc-400 mt-2">
-          Software engineer — resume, projects, and some guitar recordings.
+          Hi, I'm Brody! I'm a software engineer with a passion for building impactful projects. This is my personal site where I share my work, code, and guitar recordings. Feel free to explore and reach out!
         </p>
       </div>
 
@@ -28,7 +28,7 @@ export default function Home() {
         <Card>
           <a href="/guitar">
             <h3 className="font-semibold">Guitar Projects</h3>
-            <p className="text-sm text-zinc-600">Videos and recordings — I'll upload MP4s here.</p>
+            <p className="text-sm text-zinc-600">I play guitar too check it out.</p>
           </a>
         </Card>
 
