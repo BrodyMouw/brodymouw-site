@@ -23,6 +23,9 @@ export default function Nav() {
           <a className="px-3 py-2 text-sm rounded-md hover:bg-white/80 dark:hover:bg-zinc-900" href="/code">
             Code
           </a>
+          <a className="px-3 py-2 text-sm rounded-md hover:bg-white/80 dark:hover:bg-zinc-900" href="/contact">
+            Contact
+          </a>
         </div>
 
         <ThemeToggle />

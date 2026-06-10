@@ -35,7 +35,7 @@ export default function Home() {
         <Card>
           <a href="/contact">
             <h3 className="font-semibold">Contact</h3>
-            <p className="text-sm text-zinc-600">Email and social links.</p>
+            <p className="text-sm">Email and social links.</p>
           </a>
         </Card>
       </div>

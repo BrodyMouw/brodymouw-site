@@ -11,12 +11,12 @@ export default function GuitarPage() {
   }
 
   function formatTitle(filename: string) {
-  return filename
-    .replace(".mp4", "")
-    .replace(/[-_]/g, " ")         // replace hyphens/underscores with spaces
-    .replace(/([A-Z])/g, " $1")
-    .trim()
-}
+    return filename
+      .replace(".mp4", "")
+      .replace(/[-_]/g, " ")
+      .replace(/([A-Z])/g, " $1")
+      .trim();
+  }
 
   return (
     <section className="space-y-6">
@@ -25,9 +25,11 @@ export default function GuitarPage() {
       <p>Here are some of my guitar recordings:</p>
 
       {videos.length === 0 ? (
-        <div className="text-sm text-zinc-600">No videos found in <code className="rounded bg-zinc-100 px-1">public/guitar/</code>. Add MP4 files to that folder.</div>
+        <div className="text-sm text-zinc-600">
+          No videos found in <code className="rounded bg-zinc-100 px-1">public/guitar/</code>. Add MP4 files to that folder.
+        </div>
       ) : (
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2">
           {videos.map((v) => (
             <VideoCard key={v} src={`/guitar/${v}`} title={formatTitle(v)} />
           ))}

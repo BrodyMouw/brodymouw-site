@@ -16,18 +16,30 @@
 
 html.dark {
   --background: #121212;
-  --foreground: #ededed;
+  --foreground: #fffdfd;
   --card-bg: #212121;
   --card-radius: 30px;
   --card-shadow: 15px 15px 30px rgb(25, 25, 25), -5px -5px 10px rgb(60, 60, 60);
+
+  /* Typography */
+  --heading-color: #ffffff;
+  --body-color: #a1a1a1;
+  --heading-size: 1.25rem;
+  --body-size: 0.875rem;
 }
 
 html.light {
   --background: #f6f6f6;
   --foreground: #171717;
   --card-bg: #e0e0e0;
-  --card-radius: 50px;
+  --card-radius: 30px;
   --card-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+
+  /* Typography */
+  --heading-color: #171717;
+  --body-color: #555555;
+  --heading-size: 1.25rem;
+  --body-size: 0.875rem;
 }
 
 body {
@@ -41,4 +53,16 @@ body {
   background: var(--card-bg);
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
+  transition: box-shadow 160ms ease-in-out, background-color 160ms ease-in-out;
+  padding: 1.25rem 1.5rem;
+}
+
+h3 {
+  color: var(--heading-color);
+  font-size: var(--heading-size);
+}
+
+p {
+  color: var(--body-color);
+  font-size: var(--body-size);
 }

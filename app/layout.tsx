@@ -47,7 +47,7 @@ export default function RootLayout({
 
         <footer className="border-t border-zinc-100 bg-zinc-200 py-6 dark:border-zinc-800 dark:bg-zinc-800/60">
           <Container>
-            <div className="text-sm text-zinc-600 dark:text-zinc-400">© {new Date().getFullYear()} Brody Mouw</div>
+            <div className="text-sm text-zinc-600 dark:text-white">© {new Date().getFullYear()} Brody Mouw</div>
           </Container>
         </footer>
         </ThemeProvider>
