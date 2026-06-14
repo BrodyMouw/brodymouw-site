@@ -4,6 +4,7 @@ import "./globals.css";
 import { Container } from "../components/ui";
 import Nav from "../components/ui/Nav";
 import { ThemeProvider } from "next-themes"
+import SocialLinks from "../components/ui/SocialLinks";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,9 @@ export default function RootLayout({
           <Container>
             <div className="text-sm text-zinc-600 dark:text-white">© {new Date().getFullYear()} Brody Mouw</div>
           </Container>
+          <Container>
+            <SocialLinks/>
+          </Container>          
         </footer>
         </ThemeProvider>
       </body>
