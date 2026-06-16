@@ -22,7 +22,7 @@ const cards = [
   },
   {
     href: "/contact",
-    image: "/images/contact.jpg",
+    image: "/images/Contact.jpg",
     title: "Contact",
     description: "Email and social links.",
   },
