@@ -12,7 +12,7 @@ export default function Nav() {
       <div className="flex items-center gap-3">
         <div className="flex gap-2">
           <a className="px-3 py-2 text-sm rounded-md hover:bg-white/80 dark:hover:bg-zinc-900" href="/">
-            Overview
+            Home
           </a>
           <a className="px-3 py-2 text-sm rounded-md hover:bg-white/80 dark:hover:bg-zinc-900" href="/work">
             Work
