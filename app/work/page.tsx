@@ -1,6 +1,14 @@
 import fs from "fs";
 import path from "path";
+import type { Metadata } from "next";
 import { Button, Card } from "../../components/ui";
+
+export const metadata: Metadata = {
+  title: "Work & Resume",
+  description:
+    "Brody Mouw's work experience, skills, and resume. Full stack developer at Sandhills Global with expertise in C#, ASP.NET Core, React, and Elasticsearch.",
+  alternates: { canonical: "https://brodymouw.com/work" },
+};
 
 const skills = [
   { label: "TypeScript", icon: "devicon-typescript-plain colored" },

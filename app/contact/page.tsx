@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import { Card } from "../../components/ui";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with Brody Mouw — email, phone, LinkedIn, and GitHub.",
+  alternates: { canonical: "https://brodymouw.com/contact" },
+};
 
 export default function ContactPage() {
   return (

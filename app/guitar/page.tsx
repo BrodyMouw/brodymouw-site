@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import VideoCard from "../../components/VideoCard";
+
+export const metadata: Metadata = {
+  title: "Guitar Projects",
+  description:
+    "Guitar recordings by Brody Mouw — covers and original playing.",
+  alternates: { canonical: "https://brodymouw.com/guitar" },
+};
 
 const videos = [
   { id: "X5rokVxy-Ig", title: "First strum pattern" },

@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import { Card } from "../../components/ui";
+
+export const metadata: Metadata = {
+  title: "Code Projects",
+  description:
+    "Brody Mouw's software projects — web, mobile, and systems development including React Native apps, Next.js sites, and C# applications.",
+  alternates: { canonical: "https://brodymouw.com/code" },
+};
 
 export default function CodePage() {
   return (

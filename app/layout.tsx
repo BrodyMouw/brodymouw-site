@@ -17,8 +17,41 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brody Mouw",
-  description: "Software developer portfolio — full stack web and mobile development.",
+  metadataBase: new URL("https://brodymouw.com"),
+  title: {
+    default: "Brody Mouw — Software Engineer",
+    template: "%s | Brody Mouw",
+  },
+  description:
+    "Brody Mouw is a full stack software engineer specializing in web and mobile development. Based in Scottsdale, AZ.",
+  authors: [{ name: "Brody Mouw", url: "https://brodymouw.com" }],
+  keywords: [
+    "Brody Mouw",
+    "software engineer",
+    "full stack developer",
+    "web developer",
+    "React",
+    "TypeScript",
+    "C#",
+    "ASP.NET",
+  ],
+  openGraph: {
+    type: "website",
+    url: "https://brodymouw.com",
+    siteName: "Brody Mouw",
+    title: "Brody Mouw — Software Engineer",
+    description:
+      "Full stack software engineer. React, C#, Node.js, TypeScript.",
+    images: [{ url: "/images/BrodyGuitar.jpeg", alt: "Brody Mouw" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Brody Mouw — Software Engineer",
+    description:
+      "Full stack software engineer. React, C#, Node.js, TypeScript.",
+    images: ["/images/BrodyGuitar.jpeg"],
+  },
+  alternates: { canonical: "https://brodymouw.com" },
 };
 
 export default function RootLayout({
@@ -34,6 +67,27 @@ export default function RootLayout({
     >
       <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Brody Mouw",
+              url: "https://brodymouw.com",
+              jobTitle: "Software Engineer",
+              worksFor: { "@type": "Organization", name: "Sandhills Global" },
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "South Dakota State University",
+              },
+              sameAs: [
+                "https://www.linkedin.com/in/Brody-Mouw",
+                "https://github.com/brody-mouw",
+              ],
+            }),
+          }}
+        />
       </head>
       <body className="min-h-full flex min-h-screen flex-col bg-zinc-50 dark:bg-black">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
